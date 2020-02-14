@@ -1,0 +1,14 @@
+[
+  {
+    "label": "Getting Started",
+    "link": "/"
+  },
+  {
+    "label": "Deployments",
+    "link": "/deployment"
+  },
+  {
+    "label": "Billing",
+    "link": "/billing"
+  }
+]

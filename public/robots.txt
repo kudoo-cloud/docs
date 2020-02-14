@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://docs.kudoo.io/sitemap.xml
+Host: https://docs.kudoo.io

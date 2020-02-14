@@ -1,0 +1,30 @@
+[
+  {
+    "label": "Getting Started",
+    "link": "/"
+  },
+  {
+    "label": "General overview",
+    "link": "/overview"
+  },
+  {
+    "label": "Screens",
+    "link": "/screens"
+  },
+  {
+    "label": "Data model",
+    "link": "/datamodel"
+  },
+  {
+    "label": "Document management",
+    "link": "/documents"
+  },
+  {
+    "label": "Widgets",
+    "link": "/widgets"
+  },
+  {
+    "label": "PubSub",
+    "link": "/pubsub"
+  }
+]
