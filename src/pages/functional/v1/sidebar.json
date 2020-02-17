@@ -1,0 +1,30 @@
+[
+  {
+    "label": "Getting Started",
+    "link": "/"
+  },
+  {
+    "label": "Common tasks",
+    "link": "/common"
+  },
+  {
+    "label": "Projects",
+    "link": "/projects"
+  },
+  {
+    "label": "Inventory",
+    "link": "/inventory"
+  },
+  {
+    "label": "Finance",
+    "link": "/finance"
+  },
+  {
+    "label": "Health",
+    "link": "/health"
+  },
+  {
+    "label": "Manufacturing",
+    "link": "/manufacturing"
+  }
+]

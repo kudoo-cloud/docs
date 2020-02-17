@@ -9,11 +9,13 @@ import {
 } from "@kudoo/components"
 import administratorVersions from "../pages/administrator/versions.json"
 import developerVersions from "../pages/developer/versions.json"
+import functionalVersions from "../pages/functional/versions.json"
 import governanceVersions from "../pages/governance/versions.json"
 import Layout from "../components/layout"
 
 const latestAdministratorVersion = last(administratorVersions)
 const latestDeveloperVersion = last(developerVersions)
+const latestFunctionalVersion = last(functionalVersions)
 const latestGovernanceVersion = last(governanceVersions)
 
 const IndexPage = props => {
@@ -46,6 +48,19 @@ const IndexPage = props => {
             price="Developer"
             highlighted
             shortDescription={"Docs for Developer"}
+            onFindOutClick={() => {}}
+          />
+        </div>
+        <div
+          className={classes.docsOption}
+          onClick={() => {
+            navigate(`/functional/${latestFunctionalVersion.value}/`)
+          }}
+        >
+          <SubscriptionCard
+            price="Functional"
+            highlighted
+            shortDescription={"How to use the system"}
             onFindOutClick={() => {}}
           />
         </div>
