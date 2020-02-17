@@ -6,11 +6,9 @@ import PropTypes from "prop-types"
 import { withStyles } from "@kudoo/components"
 import styles from "./styles"
 import LogoImage from "@kudoo/components/build/assets/images/logo.png"
-import administratorVersion from "../../pages/administrator/versions.json"
 import developerVersions from "../../pages/developer/versions.json"
 import functionalVersions from "../../pages/functional/versions.json"
 
-const latestAdministratorVersion = last(administratorVersion)
 const latestDeveloperVersion = last(developerVersions)
 const latestFunctionalVersion = last(functionalVersions)
 
@@ -62,14 +60,6 @@ class Header extends Component {
         {location.pathname !== "/" && (
           <div className={classes.bottomBar}>
             <div className={classes.bottomBarLinks}>
-              <Link
-                className={cx(classes.bottomBarLink, {
-                  activeLink: this._isActive("administrator"),
-                })}
-                to={`/administrator/${latestAdministratorVersion.value}/`}
-              >
-                Administrator
-              </Link>
               <Link
                 className={cx(classes.bottomBarLink, {
                   activeLink: this._isActive("developer"),
