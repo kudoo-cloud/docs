@@ -8,6 +8,14 @@
     "link": "/overview"
   },
   {
+    "label": "Deployments",
+    "link": "/deployment"
+  },
+  {
+    "label": "Billing",
+    "link": "/billing"
+  },
+  {
     "label": "Screens",
     "link": "/screens"
   },

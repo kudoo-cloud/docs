@@ -7,16 +7,12 @@ import {
   Jumbotron,
   Footer,
 } from "@kudoo/components"
-import administratorVersions from "../pages/administrator/versions.json"
 import developerVersions from "../pages/developer/versions.json"
 import functionalVersions from "../pages/functional/versions.json"
-import governanceVersions from "../pages/governance/versions.json"
 import Layout from "../components/layout"
 
-const latestAdministratorVersion = last(administratorVersions)
 const latestDeveloperVersion = last(developerVersions)
 const latestFunctionalVersion = last(functionalVersions)
-const latestGovernanceVersion = last(governanceVersions)
 
 const IndexPage = props => {
   const classes = props.classes || {}
@@ -25,19 +21,6 @@ const IndexPage = props => {
       <Jumbotron title="WELCOME TO THE KUDOO DOCS" />
       <div className={classes.title}>Please choose docs below</div>
       <div className={classes.docsOptions}>
-        <div
-          className={classes.docsOption}
-          onClick={() => {
-            navigate(`/administrator/${latestAdministratorVersion.value}/`)
-          }}
-        >
-          <SubscriptionCard
-            price="Administrator"
-            highlighted
-            shortDescription={"Administrator functionality docs"}
-            onFindOutClick={() => {}}
-          />
-        </div>
         <div
           className={classes.docsOption}
           onClick={() => {
@@ -61,19 +44,6 @@ const IndexPage = props => {
             price="Functional"
             highlighted
             shortDescription={"How to use the system"}
-            onFindOutClick={() => {}}
-          />
-        </div>
-        <div
-          className={classes.docsOption}
-          onClick={() => {
-            navigate(`/governance/${latestGovernanceVersion.value}/`)
-          }}
-        >
-          <SubscriptionCard
-            price="Governance"
-            highlighted
-            shortDescription={"Governance documentation"}
             onFindOutClick={() => {}}
           />
         </div>
