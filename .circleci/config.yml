@@ -19,11 +19,11 @@ jobs:
     steps:
       - checkout
       - run: 
-        name: Install dependencies 
-        command: npm install
+          name: Install dependencies 
+          command: npm install
       - run:
-        name: Build Gatsby
-        command: npm run build
+          name: Build Gatsby
+          command: npm run build
       - run:
-        name: Firebase Deploy
-        command: ./node_modules/.bin/firebase deploy --token "$FIREBASE_TOKEN"
+          name: Firebase Deploy
+          command: ./node_modules/.bin/firebase deploy --token "$FIREBASE_TOKEN"
