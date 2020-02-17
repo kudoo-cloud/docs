@@ -4,24 +4,20 @@
     "link": "/"
   },
   {
-    "label": "General overview",
-    "link": "/overview"
+    "label": "Running the application",
+    "link": "/running"
+  },
+  {
+    "label": "Configuring the application",
+    "link": "/configuring"
+  },
+  {
+    "label": "Customizing the app",
+    "link": "/customizing"
   },
   {
     "label": "Deployments",
     "link": "/deployment"
-  },
-  {
-    "label": "Billing",
-    "link": "/billing"
-  },
-  {
-    "label": "Screens",
-    "link": "/screens"
-  },
-  {
-    "label": "Data model",
-    "link": "/datamodel"
   },
   {
     "label": "Document management",
@@ -30,9 +26,5 @@
   {
     "label": "Widgets",
     "link": "/widgets"
-  },
-  {
-    "label": "PubSub",
-    "link": "/pubsub"
   }
 ]

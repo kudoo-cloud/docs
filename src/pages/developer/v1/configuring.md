@@ -1,24 +1,4 @@
-# Working with Products
-Kudoo currently has the following Products within the web application:
-* Projects
-* Health
-* Inventory
-* Finance
-* Manufacturing
-
-You can choose which Products you'd like to include by editing `src/security/index.tsx`.
-
-Under the `const` Products, specify which Products you'd like to include by specifying `isAvailable` to either true or false.
-
-# Adding menu items
-To add menu items open `src/security/menuItems.tsx`
-
-Under menu items you will see all the `const` for the Products
-* projectMenuItems
-* healthMenuItems
-* inventoryMenuItems
-* financeMenuItems
-* manufacturingMenuItems
+# Configuring the application
 
 There are some things to note about a Menu Item
 
@@ -34,3 +14,18 @@ isActive: This determines whether this MenuItem is active
 
 # Adding an icon
 This will go through how to add an Icon to the application
+
+# Billing
+
+We leverage [Stripe](https://stripe.com/) in order to help you accept payments from your Customers. 
+
+In order to invoice and accept payments from your customers you will need to complete the following steps:
+- [ ] Create a Stripe account
+- [ ] Configure the Stripe environmental variables
+- [ ] Update your Licensing information
+
+## <a name='create-stripe'></a> Create a Stripe account
+
+## <a name='configure-stripe'></a> Configure the Stripe environmental variables
+
+## <a name='update-licensing'></a> Update your Licensing information
