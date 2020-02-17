@@ -7,8 +7,8 @@ In order to invoice and accept payments from your customers you will need to com
 - [ ] Configure the Stripe environmental variables
 - [ ] Update your Licensing information
 
-## Create a Stripe account
+## <a name='create-stripe'></a> Create a Stripe account
 
-## Configure the Stripe environmental variables
+## <a name='configure-stripe'></a> Configure the Stripe environmental variables
 
-## Update your Licensing information
+## <a name='update-licensing'></a> Update your Licensing information

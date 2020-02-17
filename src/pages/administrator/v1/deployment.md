@@ -12,17 +12,31 @@ For the frontend we recommend [Firebase](https://firebase.google.com/) or [Netli
 For the server, it's up to you. We will provide setup instructions below for Ubuntu. Although theoretially you could run your deployment on Windows Servers too.
 
 ## <a name="frontend"></a>  Deploying the frontend
-To get started using automated deployments there is some setup you'll need to perform.
+You can configure automated builds using a CI tool. That is outside the scope of this. Although if you'd like to add instructions please submit a [PR](https://github.com/kudoo-cloud/docs).
 
-We use [Drone](https://drone.io/) for our Automated deployments. 
+To deploy the frontend manually, you'll need to first setup your host.
 
-Once you signed up for Kudoo cloud through the [Portal](https://portal.kudoo.io) all you need to do to activate your Drone account is to visit https://drone.kudoo.io and then authorise the application. 
-![Authorise Drone](assets/drone-authorisation.png)
-You will now have access to Drone.
+Both Netlify and Firebase are fantastic for statically hosted sites. 
 
-You can now open the `web-app` repository
-![Web app repository](assets/drone-repo.png)
+So create an account at one and then link your domain name to their DNS.
 
-Under the source directory there will be a file called `.drone.yml`. 
+Once that's done, you'll need to install their relevant CLI tool
+* Firebase - `npm install -g firebase-tools`
+* Netlify - `npm install netlify-cli -g`
+
+You can now build the frontend:
+`cd frontend && npm install && npm run build`
+
+You can now deploy with either
+* `firebase deploy`
+* `netlify deploy --open`
 
 ## <a name="server"></a> Deploying the Server
+
+- [ ] Install a database 
+- [ ] Setup a Production VM
+
+### Install a database
+You can use either [Postgres](https://www.postgresql.org/) or [MySQL](https://www.mysql.com/).
+
+### Setup a Production VM
