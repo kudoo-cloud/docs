@@ -9,12 +9,10 @@ import LogoImage from "@kudoo/components/build/assets/images/logo.png"
 import administratorVersion from "../../pages/administrator/versions.json"
 import developerVersions from "../../pages/developer/versions.json"
 import functionalVersions from "../../pages/functional/versions.json"
-import governanceVersions from "../../pages/governance/versions.json"
 
 const latestAdministratorVersion = last(administratorVersion)
 const latestDeveloperVersion = last(developerVersions)
 const latestFunctionalVersion = last(functionalVersions)
-const latestGovernanceVersion = last(governanceVersions)
 
 class Header extends Component {
   static propTypes = {
@@ -87,14 +85,6 @@ class Header extends Component {
                 to={`/functional/${latestFunctionalVersion.value}/`}
               >
                 Functional
-              </Link>
-              <Link
-                className={cx(classes.bottomBarLink, {
-                  activeLink: this._isActive("governance"),
-                })}
-                to={`/governance/${latestGovernanceVersion.value}/`}
-              >
-                Governance
               </Link>
             </div>
           </div>

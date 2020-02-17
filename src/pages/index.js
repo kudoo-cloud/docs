@@ -10,13 +10,11 @@ import {
 import administratorVersions from "../pages/administrator/versions.json"
 import developerVersions from "../pages/developer/versions.json"
 import functionalVersions from "../pages/functional/versions.json"
-import governanceVersions from "../pages/governance/versions.json"
 import Layout from "../components/layout"
 
 const latestAdministratorVersion = last(administratorVersions)
 const latestDeveloperVersion = last(developerVersions)
 const latestFunctionalVersion = last(functionalVersions)
-const latestGovernanceVersion = last(governanceVersions)
 
 const IndexPage = props => {
   const classes = props.classes || {}
@@ -61,19 +59,6 @@ const IndexPage = props => {
             price="Functional"
             highlighted
             shortDescription={"How to use the system"}
-            onFindOutClick={() => {}}
-          />
-        </div>
-        <div
-          className={classes.docsOption}
-          onClick={() => {
-            navigate(`/governance/${latestGovernanceVersion.value}/`)
-          }}
-        >
-          <SubscriptionCard
-            price="Governance"
-            highlighted
-            shortDescription={"Governance documentation"}
             onFindOutClick={() => {}}
           />
         </div>
