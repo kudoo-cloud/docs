@@ -6,5 +6,6 @@ title: Welcome
 
 We're very excited that you have decided to explore our platform. We're here to make it as easy as possible to get up and running and start benefiting from being part of our community.
 
+The main thing an Administrator will do is:
 * [Deployment](deployment)
 * [Billing](billing)

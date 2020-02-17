@@ -1,7 +1,17 @@
-# Deployments
-There are two ways that Kudoo supports you releasing new versions of your app. Automated and manual.
+#### [Deployments](#deployments)
+##### [Deploying the frontend](#frontend)
+##### [Deploying the server](#server)
 
-## Automated deployments
+# <a name="deployments"></a> Deployments
+When you are ready for your application to be deployed outside of your local development machine, you can deploy it to the cloud.
+
+You will need to deploy both the frontend and the server.
+
+For the frontend we recommend [Firebase](https://firebase.google.com/) or [Netlify](https://www.netlify.com/)
+
+For the server, it's up to you. We will provide setup instructions below for Ubuntu. Although theoretially you could run your deployment on Windows Servers too.
+
+## <a name="frontend"></a>  Deploying the frontend
 To get started using automated deployments there is some setup you'll need to perform.
 
 We use [Drone](https://drone.io/) for our Automated deployments. 
@@ -15,26 +25,4 @@ You can now open the `web-app` repository
 
 Under the source directory there will be a file called `.drone.yml`. 
 
-### Configuring your Pipelines
-In order for your deployments to work you'll need to enter the `secrets` of your application.
-
-NODE_ENV=development
-GRAPHQL_API_URL=http://localhost:4000/api/
-SKELM_BASE_URL=http://localhost:4000
-
-## Manual deployments
-
-To do this you'll need to clone you app your app locally.
-
-You'll need to make sure you have [Node installed](https://nodejs.org/en/download/)
-
-Then make sure you are using the correct version. As of this writing, the latest LTS version of Node is version 12. 
-
-**Please note** Kudoo will always use the currently active LTS node release.
-
-Now make sure you have [Firebase Tools](https://github.com/firebase/firebase-tools) installed by running:
-`npm install -g firebase-tools`
-
-You can now run
-`firebase deploy` 
-to deploy your app.
+## <a name="server"></a> Deploying the Server
