@@ -29,6 +29,8 @@ Also please ensure that you have [Docker compose](https://docs.docker.com/compos
 ### [Postgres](https://www.postgresql.org/) or [MySQL](https://www.mysql.com/)
 We support both Postgres and MySQL. This is because under the hood we use [Prisma](https://prisma.io). We have some concerns about using Prisma in the long term, so if you'd like to future proof your application, we recommend using Postgres.
 
+Please create a new database to be used for Kudoo.
+
 ### Third party services
 The Kudoo application also sends emails and saves `pdf` documents to cloud storage. 
 
