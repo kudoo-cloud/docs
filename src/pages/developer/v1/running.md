@@ -16,11 +16,6 @@ We'd suggest using a Node Version Manager in order to manage your Node versions.
 
 For non windows users [NVM](https://github.com/nvm-sh/nvm) or if you're using Windows then please use [NVM-Windows](https://github.com/coreybutler/nvm-windows)
 
-You'll need to have the following global packages installed
-`npm install -g pm2`
-
-[PM2](https://pm2.keymetrics.io/) is a daemon process manager that will help you manage and keep your application online 24/7 
-
 ### [Docker](https://www.docker.com/) 
 **Please note** Docker for Windows is still pretty new and not an ideal developer experience. You can get it running, but we've run into multiple performance issues running on pretty high specced out laptops.
 
@@ -41,13 +36,31 @@ For cloud storage we use [Amazon S3](https://aws.amazon.com/s3/) to store files.
 ### Australian Healthcare Identifiers
 We also have a REST api for [Australian Heatlhcare Identifiers](https://github.com/kudoo-cloud/aus-healthidentifiers). If you are developing an Australian Health application, please see the repository for setting up a local development environment.
 
- 
 ## Credentials
 You will now need to setup your environmental variables.
 
-Firstly you'll need to adjust the `linux.yml` file and add your database username and password.
+This consists of three steps:
+- [ ] Adjusting the `docker compose` file
+- [ ] Adjusting the `frontend` environmental variables
+- [ ] Adjusting the `server` environmental variables
 
-Copy the `env.sample` file to two new files:
+### Docker compose
+Firstly you'll need to adjust the `server.yml` docker compose file located under `./server/scrips/server.yml`.
+
+Add the following credentials:
+* database
+* user 
+* password
+
+You can now test to see whether it's working by running `docker-compose -f server.yml up` in the scripts directory. You should see a success log similar to the one below.
+
+![Docker](/assets/docker.png)
+
+Cancel the process and restart it in as a daemon
+`docker-compose -f server.yml up -d`
+
+### Frontend credentials
+Navigate to the `frontend` folder andthen copy the `env.sample` file to two new files:
 * .env
 * .env.development
 
@@ -61,12 +74,22 @@ GRAPHQL_API_URL=http://localhost:3000/api/
 STRIPE_API_KEY=testing
 SKELM_BASE_URL=http://localhost:3000
 ```
+
+### Server credentials
+Navigate to the `server` folder and then copy the `env.sample` file to two new files:
+* .env
+* .env.development
+
+And then configure the variables.
+
+You will need to configure [Stripe](https://stripe.com) credentials in order to take payments. If you aren't a commercial entity, please raise an issue on Github and we will fix this requirement.
+
 ## Running
 There is a bash script you can use but it's still `WIP`. So to get the local environment running locally follow these steps:
 ```bash
 docker-compose -f server.yml up -d
 cd server
-pm2 start skelm-pm2.json
+npm run start
 cd ../frontend
 npm install
 npm run start

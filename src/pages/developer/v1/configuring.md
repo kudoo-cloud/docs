@@ -1,31 +1,25 @@
 # Configuring the application
 
-There are some things to note about a Menu Item
+The main application can be configured using the `kudoo.toml` file located in the `frontend` folder.
 
-name: This field is a string and will indicate what appears in the Menu Item
-order: This determines the order the menu item will appear
-availability: This will help to determine for which users this Menu Item is available for. There are a few different criteria you can specify:
-* country: [string];
-* security?: Array<SecurityRole>;
-* businessType?: Array<string>;
-icon: This indicates the icon to use
-url: This is the URL to add. Currently this is located in [Kudoo's Shared Component repo](https://github.com/KudooCloud/kudoo-shared-components) under `src/config/urls.js`. So when you're creating a new Menu Item, you'll need to link it to a Screen. To do this you create the URL.
-isActive: This determines whether this MenuItem is active
+Why did we choose `toml` over the more adopted `yaml`. Well have a read of this [https://github.com/golang/go/issues/23966#issuecomment-377997161]. TLDR: We decided `toml` was more simpler than `yaml` 
 
-# Adding an icon
-This will go through how to add an Icon to the application
+The `toml` file allows you specify the general skeleton of the application. So by editing the file you can specify:
 
-# Billing
+Which apps you want to include
 
-We leverage [Stripe](https://stripe.com/) in order to help you accept payments from your Customers. 
+Which menu items you'd like to include in each app
 
-In order to invoice and accept payments from your customers you will need to complete the following steps:
-- [ ] Create a Stripe account
-- [ ] Configure the Stripe environmental variables
-- [ ] Update your Licensing information
+What the security is for each menu item
 
-## <a name='create-stripe'></a> Create a Stripe account
+This will be easier to show an example. Let's say we only want to deploy the `health` application.
 
-## <a name='configure-stripe'></a> Configure the Stripe environmental variables
+We will then mark `isAvailable` field to `false` for all the other applications
+![TOML unavailable](/assets/toml-unavailable.png)
 
-## <a name='update-licensing'></a> Update your Licensing information
+This ensures those applications are not available.
+
+Let's say we now want to adjust the security of a menu item. All we do is adjust the availability
+![TOML security](/assets/toml-security.png)
+
+In the above screenshot we can see that Dashboard is only available to `owners` and `admin` users and companies from Australia.
