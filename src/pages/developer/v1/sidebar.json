@@ -18,13 +18,5 @@
   {
     "label": "Deployments",
     "link": "/deployment"
-  },
-  {
-    "label": "Document management",
-    "link": "/documents"
-  },
-  {
-    "label": "Widgets",
-    "link": "/widgets"
   }
 ]
