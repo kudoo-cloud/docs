@@ -62,3 +62,4 @@ Please take a note of the external IP address of you server so that you can then
 Log into your server and clone `kudoo`
 
 `git clone https://github.com/kudoo-cloud/kudoo`
+
