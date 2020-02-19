@@ -7,4 +7,4 @@ If you'd prefer to read through the guide, please continue below:
 
 ## Account management
 ### Creating an account
-## Creating an company
+## Creating a company
