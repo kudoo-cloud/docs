@@ -5,7 +5,8 @@
 * 10% under the Pangolin Labs
 * 30% to Team/Treasury
 * 10% to Private Sale
-* 50% Community distributed
+* 10% Airdropped to DAO's
+* 40% Community distributed
 
 ### Pangolin Labs
 
@@ -29,6 +30,32 @@ This sale will consist of two rounds.
 
 * Private sale
 * Avalaunch sale
+
+### Airdrop
+
+We will airdrop to DAO's on Avalanche. The current thinking is that the following projects will be eligible:
+
+Kudoo Up-pointing red triangle @KudooCloud · Oct 3 We’re looking at doing an airdrop to all the @avalancheavax OGs. @pangolindex
+
+* Snowball
+* Verso
+* Yield Yak
+* Penguin
+* Avme
+* Avaware
+* Sherpa
+* Spore
+* Elk
+* Markr
+* Canary
+* Trader Joe
+* Lydia
+* Avalaunch
+* Husky
+* Baguette
+* Cycle
+* Crypto Seals
+* Gondola
 
 ### Community distributed
 
