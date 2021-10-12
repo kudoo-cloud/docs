@@ -2,17 +2,19 @@
 
 ## Distribution of KUD
 
+Since there are approximately 482,000 Kudu that exist in the wild that's how many tokens we will release.
+
 * 10% under the Pangolin Labs
-* 30% to Team/Treasury
+* 10% to Team
+* 20% to Treasury
 * 10% to Private Sale
-* 10% Airdropped to DAO's
-* 40% Community distributed
+* 5% Airdropped to DAO's
+* 45% Community distributed
 
 ### Pangolin Labs
 
-Pangolin Labs is an incubator which has allowed Kudoo to develop into a fully fledged product. While Kudoo has been in development for years, Pangolin allowed the resources to get it working for the Blockchain and allowed us the platform to get our product to market. We will release 48,200 KUD tokens over 1 year to the following Pangolin pools:
+Pangolin Labs is an incubator which has allowed Kudoo to develop into a fully fledged product. While Kudoo has been in development for years, Pangolin allowed the resources to get it working for the Blockchain and allowed us the platform to get our product to market. We will release 48,200 KUD tokens over 2 years to the following Pangolin pools:
 
-* PNG - WAVAX
 * Single sided PNG staking
 * USDC.e - KUD
 
@@ -22,21 +24,22 @@ Pangolin Labs is an incubator which has allowed Kudoo to develop into a fully fl
 
 ### Private Sale
 
-Since there are approximately 482,000 Kudu that exist in the wild that's how many tokens we will release.
-
 We will release KUD with a fully diluted valuation of 10 million USD at a price of $20.75 per token.
 
 This sale will consist of two rounds. 
 
-* Private sale
-* Avalaunch sale
+* Private sale (50%)
+* Avalaunch sale (50%)
+
+We will use the proceeds from the Private Sale to launch USDC.e - KUD Liquidity exclusively on Pangolin.
+
+So that means 500K USDC will be used to provide Liquidity from the Private Sale as well as a matching amount of KUD from the Treasury.
 
 ### Airdrop
 
-We will airdrop to DAO's on Avalanche. The current thinking is that the following projects will be eligible:
+We will airdrop to DAO's on Avalanche. 25% of the Airdrop will be to the following projects (vested over 2 years):
 
-Kudoo Up-pointing red triangle @KudooCloud · Oct 3 We’re looking at doing an airdrop to all the @avalancheavax OGs. @pangolindex
-
+* Pangolin
 * Snowball
 * Verso
 * Yield Yak
