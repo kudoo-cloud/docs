@@ -18,9 +18,19 @@ Pangolin Labs is an incubator which has allowed Kudoo to develop into a fully fl
 * Single sided PNG staking
 * USDC.e - KUD
 
-### Team/Treasury
+### Treasury
 
-30% of the token allocation will be used to fund the further development of the protocol
+20% of the token allocation will be used to fund the further development of the protocol
+
+Vesting schedule is 24 months linear
+
+
+
+### Team
+
+10% of the tokes will be allocated to Kudoo team 
+
+Vesting schedule: 5% TGE, 6 months lock-up, 30 months linear
 
 ### Private Sale
 
@@ -34,6 +44,8 @@ This sale will consist of two rounds.
 We will use the proceeds from the Private Sale to launch USDC.e - KUD Liquidity exclusively on Pangolin.
 
 So that means 500K USDC will be used to provide Liquidity from the Private Sale as well as a matching amount of KUD from the Treasury.
+
+Vesting schedule for private sale is 24 months linear where Avalaunch public sale has 12 months linear vesting
 
 ### Airdrop
 
@@ -59,6 +71,8 @@ We will airdrop to DAO's on Avalanche. 25% of the Airdrop will be to the followi
 * Cycle
 * Crypto Seals
 * Gondola
+
+We will revise the list of DAOs for airdrop in every 6 months based on DAOs entering/leaving Avalanche
 
 ### Community distributed
 
